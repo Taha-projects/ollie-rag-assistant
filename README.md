@@ -59,7 +59,7 @@ If the included runtimes are unavailable, install Python 3.13 from [Python.org](
 
 The current settings use `nvidia/nemotron-3.5-super-vl:free` for chat, AI Think, and image reading; `nvidia/nemotron-3-embed-1b:free` for file retrieval; and the Super VL model for scanned-page extraction. These model names can be changed in `backend/.env`. The free endpoints can be rate-limited. NVIDIA’s free-endpoint notice says requests may be logged for service improvement, so **do not upload confidential or personal information** to the free endpoint.
 
-To configure the API key, copy `backend/.env.example` to `backend/.env` and set `OPENROUTER_API_KEY` there. Do not put the key in React files, commit it to Git, or share it in chat.
+To configure the API key, copy `backend/.env.example` to `backend/.env` and set `   OPENROUTER_API_KEY=your_key_here` there. Do not put the key in React files, commit it to Git, or share it in chat.
 
 To enable login/logout history in Cloudflare, set `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_D1_DATABASE_ID`, and `CLOUDFLARE_API_TOKEN` in `backend/.env`. Create a Cloudflare API token scoped to the Ollie account with **D1 Write** permission, and keep the token private. Ollie creates the `auth_activity` table on the first login/logout event. To view the records in Cloudflare D1 Console, run:
 
