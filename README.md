@@ -15,8 +15,9 @@ Ollie is a document research assistant built with **React** and **FastAPI**. Upl
 
 ## Screenshots
 
-![Chat interface](screenshots/chat.png)
-![Upload and sources](screenshots/upload.png)
+![Chat interface](screenshot/chat.png)
+![Upload and sources](screenshot/upload.png)
+![AI Think mode](screenshot/aithink.png)
 -->
 
 ## How it works
